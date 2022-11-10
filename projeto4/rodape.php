@@ -1,3 +1,3 @@
 </div> <!-- fecha a divisão container-->
-</body> <
+</body> 
 </html>
