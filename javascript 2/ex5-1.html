@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script> 
+function situacao(){
+    var num1, num2, media;
+   
+    num1 - window.document.formulario.nota1.value;
+    num2 - window.document.formulario.nota2.value;
+    media = (parseFloat(num1) + parseFloat(num2))/2;
+    if(media>= 7){
+    window.document.formulario.resultado.value= "Aprovado";
+    } elseif((media<7) && (media >=4)){
+     window.document.formulario.resultado.value= "Recuperação";
+    }else{
+        window.document.formulario.resultado.value="Reprovado" ;
+    }
+
+}
+
+
+</script>
+<body>
+   <form name ="formulario">
+    <table border="2">
+        <tr>
+            <td> Nota 1</td>
+            <td> <input type="text" name="nota1" id=""></td>
+        </tr>
+        <tr>
+            <td> Nota 2</td>
+            <td> <input type="text" name="nota2" id=""></td>
+        </tr>
+        <tr>
+            
+            <td colspan="2" style="text-align:center;"> <a href="#" onclick="mult(); return false;">
+                <button>Multiplicar</button></a></td>
+
+        </tr>
+        <tr>
+            
+            <td> Situaçao</td>
+            <td> <input type="text" name="resultado" id=""></td>
+        </tr>
+      
+    </table>
+   </form> 
+</body>
+</html>                                           

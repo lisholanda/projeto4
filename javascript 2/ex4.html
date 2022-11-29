@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script> 
+function mult(){
+    var num1, num2, produto;
+    num1 - window.document.formulario.campo1.value;
+    num2 - window.document.formulario.campo2.value;
+    produto = num1 * num2;
+    //alert ("O valor da multiplicação é" +produto);
+    window.document.formulario.resultado.value= produto;
+
+}
+
+
+</script>
+<body>
+   <form name ="formulario">
+    <table border="2">
+        <tr>
+            <td> Número 1</td>
+            <td> <input type="text" name="campo1" id=""></td>
+        </tr>
+        <tr>
+            <td> Número 2</td>
+            <td> <input type="text" name="campo2" id=""></td>
+        </tr>
+        <tr>
+            
+            <td colspan="2" style="text-align:center;"> <a href="#" onclick="mult(); return false;">
+                <button>Multiplicar</button></a></td>
+
+        </tr>
+        <tr>
+            
+            <td> Resultado</td>
+            <td> <input type="text" name="resultador" id=""></td>
+        </tr>
+      
+    </table>
+   </form> 
+</body>
+</html>                                           
